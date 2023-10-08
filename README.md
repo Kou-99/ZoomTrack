@@ -1,6 +1,6 @@
 # ZoomTrack
 
-Authors: [Yutong KOU](Kou-99.github.io), [Jin Gao](https://people.ucas.edu.cn/~jgao?language=en), Liang Li, Gang Wang, [Weiming Hu](https://people.ucas.ac.cn/~huweiming?language=en), Yizheng Wang and [Bing Li](http://www.ia.cas.cn/sourcedb_ia_cas/cn/iaexpert/201707/t20170715_4833365.html)
+Authors: [Yutong KOU](https://Kou-99.github.io), [Jin Gao](https://people.ucas.edu.cn/~jgao?language=en), Liang Li, Gang Wang, [Weiming Hu](https://people.ucas.ac.cn/~huweiming?language=en), Yizheng Wang and [Bing Li](http://www.ia.cas.cn/sourcedb_ia_cas/cn/iaexpert/201707/t20170715_4833365.html)
 
 This repo is the official implementation of NeurIPS2023 spotlight *ZoomTrack: Target-aware Non-uniform Resizing for Efficient Visual Tracking*
 
