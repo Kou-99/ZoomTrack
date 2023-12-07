@@ -29,11 +29,6 @@ def parse_args():
     parser.add_argument('--world-size', type=int, help='Number of processes participating in the job.')
     parser.add_argument('--ip', type=str, default='127.0.0.1', help='IP of the current rank 0.')
     parser.add_argument('--port', type=int, default='20000', help='Port of the current rank 0.')
-
-    # REMOVE
-    parser.add_argument('--occupy', type=int, choices=[0, 1], default=0, help='occupy memory')
-    parser.add_argument('--offset', nargs='+', type=int, help='offset')
-    #
     
     args = parser.parse_args()
 
@@ -60,9 +55,9 @@ def main():
     elif args.mode == "multiple":
         train_cmd = "python -m torch.distributed.launch --nproc_per_node %d --master_port %d lib/train/run_training.py " \
                     "--script %s --config %s --save_dir %s --use_lmdb %d --script_prv %s --config_prv %s --use_wandb %d " \
-                    "--distill %d --script_teacher %s --config_teacher %s --occupy %d --offset %s" \
+                    "--distill %d --script_teacher %s --config_teacher %s" \
                     % (args.nproc_per_node, random.randint(10000, 50000), args.script, args.config, args.save_dir, args.use_lmdb, args.script_prv, args.config_prv, args.use_wandb,
-                       args.distill, args.script_teacher, args.config_teacher, args.occupy, offset)
+                       args.distill, args.script_teacher, args.config_teacher)
     elif args.mode == "multi_node":
         train_cmd = "python -m torch.distributed.launch --nproc_per_node %d --master_addr %s --master_port %d --nnodes %d --node_rank %d lib/train/run_training.py " \
                     "--script %s --config %s --save_dir %s --use_lmdb %d --script_prv %s --config_prv %s --use_wandb %d " \
