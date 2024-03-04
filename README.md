@@ -101,12 +101,13 @@ python tracking/test.py ostrack zoom --dataset lasot  --debug 5
 If our work is useful for your research, please consider citing:
 
 ```Bibtex
-@misc{kou2023zoomtrack,
-      title={ZoomTrack: Target-aware Non-uniform Resizing for Efficient Visual Tracking}, 
-      author={Yutong Kou and Jin Gao and Bing Li and Gang Wang and Weiming Hu and Yizheng Wang and Liang Li},
-      year={2023},
-      eprint={2310.10071},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{kou2023zoomtrack,
+ author = {Kou, Yutong and Gao, Jin and Li, Bing and Wang, Gang and Hu, Weiming and Wang, Yizheng and Li, Liang},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {50959--50977},
+ publisher = {Curran Associates, Inc.},
+ title = {ZoomTrack: Target-aware Non-uniform Resizing for Efficient Visual Tracking},
+ volume = {36},
+ year = {2023}
 }
 ```
